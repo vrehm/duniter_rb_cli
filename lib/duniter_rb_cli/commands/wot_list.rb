@@ -23,6 +23,7 @@ module DuniterRbCli
       end
 
       def execute(input: $stdin, output: $stdout)
+        @config.read
         endpoint = @config.fetch(:base_url) + "wot/members"
         response = HTTParty.get endpoint
         wot_list = response['results']
