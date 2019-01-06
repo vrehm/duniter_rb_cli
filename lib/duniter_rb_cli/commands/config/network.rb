@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative '../../command'
-require 'pry-byebug'
 
 module DuniterRbCli
   module Commands

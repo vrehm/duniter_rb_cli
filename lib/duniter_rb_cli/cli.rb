@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'thor'
-require 'pry-byebug'
 
 module DuniterRbCli
   # Handle the application command line parsing
@@ -26,7 +25,6 @@ module DuniterRbCli
       if options[:help]
         invoke :help, ['wot_count']
       else
-        binding.pry
         require_relative 'commands/wot_count'
         DuniterRbCli::Commands::WotCount.new(options).execute
       end
