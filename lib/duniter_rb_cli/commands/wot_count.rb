@@ -2,7 +2,6 @@
 
 require_relative '../command'
 require_relative './config/network'
-require "pry-byebug"
 require "httparty"
 
 module DuniterRbCli
