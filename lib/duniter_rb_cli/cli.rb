@@ -18,6 +18,18 @@ module DuniterRbCli
     end
     map %w(--version -v) => :version
 
+    desc 'wot_list', 'List all UIDs of WOT members for your network setting'
+    method_option :help, aliases: '-h', type: :boolean,
+                         desc: 'Display usage information'
+    def wot_list(*)
+      if options[:help]
+        invoke :help, ['wot_list']
+      else
+        require_relative 'commands/wot_list'
+        DuniterRbCli::Commands::WotList.new(options).execute
+      end
+    end
+
     desc 'wot_count', 'Count all WOT members for your network setting'
     method_option :help, aliases: '-h', type: :boolean,
                          desc: 'Display usage information'
