@@ -20,6 +20,7 @@ module DuniterRbCli
           puts 'Missing some config'
           DuniterRbCli::Commands::Config::Network.new(options).execute
         end
+      end
 
       def execute(input: $stdin, output: $stdout)
         endpoint = @config.fetch(:base_url) + "wot/members"
