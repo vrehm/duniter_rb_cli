@@ -29,6 +29,7 @@ module DuniterRbCli
         wot_list.each_with_index do |wot_member, index|
           puts "#{wot_member['uid']}: #{wot_member['pubkey']}"
         end
+        output.puts "OK"
       end
     end
   end

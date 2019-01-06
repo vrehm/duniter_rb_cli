@@ -26,7 +26,8 @@ module DuniterRbCli
         endpoint = @config.fetch(:base_url) + "wot/members"
         response = HTTParty.get endpoint
         wot_count = response['results'].count
-        output.puts "Wot Members count for #{@config.fetch(:name)}: #{wot_count}"
+        puts "Wot Members count for #{@config.fetch(:name)}: #{wot_count}"
+        output.puts "OK"
       end
     end
   end
