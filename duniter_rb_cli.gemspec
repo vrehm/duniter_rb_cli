@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Lightweight CLI in Ruby manipulating Duniter's BMA API.}
   spec.description   = %q{Manipulate easily BMA endpoints in Duniter's nodes.}
-  spec.homepage      = "https://github.com/vrehm/duniter-rb-cli"
+  spec.homepage      = "https://github.com/vrehm/duniter_rb_cli"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
