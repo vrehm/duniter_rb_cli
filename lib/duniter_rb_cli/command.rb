@@ -88,6 +88,16 @@ module DuniterRbCli
       TTY::Prompt.new(options)
     end
 
+    # The interactive config
+    #
+    # @see http://www.rubydoc.info/gems/tty-config
+    #
+    # @api public
+    def config(**options)
+      require 'tty-config'
+      TTY::Config.new(options)
+    end
+
     # Get terminal screen properties
     #
     # @see http://www.rubydoc.info/gems/tty-screen

@@ -27,13 +27,22 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (10.0.2)
+    coderay (1.1.2)
     diff-lcs (1.3)
     equatable (0.5.0)
     kramdown (1.16.2)
+    method_source (0.9.2)
     necromancer (0.4.0)
     pastel (0.7.2)
       equatable (~> 0.5.0)
       tty-color (~> 0.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.6.0)
+      byebug (~> 10.0)
+      pry (~> 0.10)
     rake (10.5.0)
     rake-compiler (1.0.7)
       rake
@@ -126,6 +135,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   duniter_rb_cli!
+  pry-byebug
   rake (~> 10.0)
   rake-compiler
   rspec (~> 3.0)
